@@ -1,10 +1,6 @@
-<%= form_for :request, :url => request_path(@request), :method => :post do |f| %>
-  <div class="field">
-    <%= f.hidden_field :reason %>
-  </div>
-  <div class="field">
-    <%= f.hidden_field :spend_time %>
-  </div>
+<%= form_for :request, :url => request_step3_path do |f| %>
+  <%= f.hidden_field :reason %>
+  <%= f.hidden_field :spend_time %>
   <div class="field">
     <%= f.label :crid %><br>
     <%= f.text_field :crid %>
@@ -20,14 +16,6 @@
   <div class="field">
     <%= f.label :owner_name %><br>
     <%= f.text_field :owner_name %>
-  </div>
-  <div class="field">
-    <%= f.label :file %><br>
-    <%= f.file_field :file %>
-  </div>
-  <div class="field">
-    <%= f.label :comment %><br>
-    <%= f.text_field :comment %>
   </div>
   <div class="actions">
     <%= f.submit %>

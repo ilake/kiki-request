@@ -1,0 +1,19 @@
+<%= form_for :request, :url => request_path(@request), :method => :post do |f| %>
+  <%= f.hidden_field :reason %>
+  <%= f.hidden_field :spend_time %>
+  <%= f.hidden_field :crid %>
+  <%= f.hidden_field :emengency_level %>
+  <%= f.hidden_field :project_name %>
+  <%= f.hidden_field :owner_name %>
+  <div class="field">
+    <%= f.label :file %><br>
+    <%= f.file_field :file %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_field :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

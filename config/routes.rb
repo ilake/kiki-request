@@ -3,6 +3,7 @@ RequestSupport::Application.routes.draw do
 
   get 'request_step1' => 'requests#step1'
   match 'request_step2' => 'requests#step2', :via => [:get, :post]
+  match 'request_step3' => 'requests#step3', :via => [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

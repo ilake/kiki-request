@@ -30,6 +30,11 @@ class RequestsController < ApplicationController
     render :action => :step2
   end
 
+  def step3
+    @request = Request.new(request_params)
+    render :action => :step3
+  end
+
   # POST /requests
   # POST /requests.json
   def create
