@@ -37,6 +37,10 @@ gem 'pry-remote'
 gem 'pry-stack_explorer'
 gem 'pry-debugger'
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
