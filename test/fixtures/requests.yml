@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  reason: MyString
+  spend_time: 2013-09-12 19:23:53
+  crid: MyString
+  emengency_level: MyString
+  comment: 
+
+two:
+  reason: MyString
+  spend_time: 2013-09-12 19:23:53
+  crid: MyString
+  emengency_level: MyString
+  comment: 

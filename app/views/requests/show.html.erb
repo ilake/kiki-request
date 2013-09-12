@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @request.reason %>
+</p>
+
+<p>
+  <strong>Spend time:</strong>
+  <%= @request.spend_time %>
+</p>
+
+<p>
+  <strong>Crid:</strong>
+  <%= @request.crid %>
+</p>
+
+<p>
+  <strong>Emengency level:</strong>
+  <%= @request.emengency_level %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @request.comment %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

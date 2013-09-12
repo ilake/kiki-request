@@ -1,0 +1,13 @@
+<%= form_for :request, :url => request_step2_path do |f| %>
+  <div class="field">
+    <%= f.label :reason %><br>
+    <%= f.text_field :reason %>
+  </div>
+  <div class="field">
+    <%= f.label :spend_time %><br>
+    <%= f.text_field :spend_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

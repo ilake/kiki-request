@@ -1,0 +1,37 @@
+<h1>Listing requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reason</th>
+      <th>Spend time</th>
+      <th>Crid</th>
+      <th>Emengency level</th>
+      <th>Comment</th>
+      <th>File</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @requests.each do |request| %>
+      <tr>
+        <td><%= request.reason %></td>
+        <td><%= request.spend_time %></td>
+        <td><%= request.crid %></td>
+        <td><%= request.emengency_level %></td>
+        <td><%= request.comment %></td>
+        <td><%= link_to request.file.url, request.file.url %></td>
+        <td><%= link_to 'Show', request %></td>
+        <td><%= link_to 'Edit', edit_request_path(request) %></td>
+        <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Request', new_request_path %>
